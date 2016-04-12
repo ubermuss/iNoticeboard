@@ -1,0 +1,8 @@
+// common styles lie in here
+@mixin wrapper {
+background-color:$primary-color-text;
+padding:5px 8px 5px 8px;
+}
+@mixin black-gradient {
+background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.46));
+}
