@@ -10,6 +10,7 @@ $accent-color:         #FF5252;
 $primary-text-color:   #212121;
 $secondary-text-color: #727272;
 $divider-color:        #B6B6B6;
+$dark-white:			#ececec;
 .navbar-theme{
 background-color:$primary-color !important;
 // box-shadow: 0 2px 5px rgba(0,0,0,0.26);
@@ -101,57 +102,56 @@ font-size: 10px;
 }
 // tab customization
 .tab-content {
-	margin-top:10px;
+margin-top:10px;
 }
 .item-wrapper {
-	@include wrapper;
+@include wrapper;
 }
 .news-wrapper{
-	padding-left:0;
-	padding-right:0;
+padding-left:0;
+padding-right:0;
 }
 .list-divider{
-	width:100%;
-	margin-top:8px;
-	margin-bottom:8px;
+width:100%;
+margin-top:8px;
+margin-bottom:8px;
 }
 .newTitle{
-	margin-top: 5px;
-	font-weight:400;
+margin-top: 5px;
+font-weight:400;
 }
 .authorTitle{
-	margin-bottom : 3px;
+margin-bottom : 3px;
 }
 .dateTitle{
-	margin-bottom : 5px;
+margin-bottom : 5px;
 }
 .author-avatar{
-	height:40px;
-	width:40px;
+height:40px;
+width:40px;
 }
 .news-list{
-	margin-top:8px;
-	padding-left:1px !important;
-	padding-right:1px !important;
-	@include card(1);
+margin-top:8px;
+padding-left:1px !important;
+padding-right:1px !important;
+@include card(1);
 }
 // eventPage
 .event-item-wrapper {
-	@include wrapper;
-	height: 110px;
-	padding-top:15px;
+@include wrapper;
+height: 110px;
+padding-top:15px;
 }
 .event-list{
-	margin-top:8px;
-	padding-left:1px !important;
-	padding-right:1px !important;
-	@include card(1);	
-	img{
-		height : 80px;
-		width :60px;
-	}
+margin-top:8px;
+padding-left:1px !important;
+padding-right:1px !important;
+@include card(1);
+img{
+height : 80px;
+width :60px;
 }
-
+}
 // event theme colors
 .red{};
 .pink{};
@@ -168,51 +168,131 @@ font-size: 10px;
 .Brown{};
 .Grey{};
 .Black{};
-
 // evemtInnerPage
 .event-content{
-	margin-top:8px;
+margin-top:8px;
 }
 .event-image-wrapper{
-	height : 250px;
-	img{
-		height:100%;
-		width:100%;
-		object-fit: cover;
-	}
+height : 250px;
+img{
+height:100%;
+width:100%;
+object-fit: cover;
+}
 }
 .event-title-wrapper{
-	background-color:$primary-text-color;
-	color:$primary-color-text;
-	padding:10px;
+background-color:$primary-text-color;
+color:$primary-color-text;
+padding:10px;
 }
 .description-wrapper{
-	background-color: $primary-color-text;
-	@include card(1);
-	padding-right:30px;
-	padding-left:30px;
-	margin-top: 20px;
-	li:first-child{
-		padding-top:10px;
-	}
-	li:last-child{
-		padding-bottom:10px;
-	}
+background-color: $primary-color-text;
+@include card(1);
+padding-right:30px;
+padding-left:30px;
+margin-top: 20px;
+li:first-child{
+padding-top:10px;
+}
+li:last-child{
+padding-bottom:10px;
+}
 }
 .desc-info{
-	font-weight:600;
-	font-size:17px;
-	color:$primary-color;
+font-weight:600;
+font-size:17px;
+color:$primary-color;
 }
 .desc-text{
-	padding:10px
+padding:10px
 }
 .desc-header{
-	font-weight:400;
-	font-size:16px;
-	margin-left:10px;
-	margin-bottom:4px;
+font-weight:400;
+font-size:16px;
+margin-left:10px;
+margin-bottom:4px;
 }
 .event-details-wrapper{
-	margin-top:10px;
+margin-top:10px;
+}
+// loginPage
+.log-pages{
+margin-top:-50px;
+height:100vh;
+background: #EB3349; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #EB3349 , #F45C43); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #EB3349 , #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.login-intro-block{
+margin-top:100px;
+h4{
+text-align:center;
+font-weight: 400;
+font-size: 27px;
+color:$dark-white;
+}
+}
+.signup-intro-block {
+margin-top:30px;
+p{
+text-align:center;
+color:$dark-white;
+}
+a{
+color:$dark-white;
+font-weight:500;
+}
+}
+.btn-submit{
+background-color:$primary-color-text !important;
+color:$primary-color !important;
+margin: 0 auto;
+display: -webkit-box;
+}
+.form-group-custom{
+input {
+color:$dark-white;
+}
+}
+// .form-group.is-focused .form-control {
+// 		 background-image: linear-gradient(#009688,#009688),linear-gradient(#D2D2D2,#D2D2D2);
+// }
+.form-elements{
+padding-right:30px;
+padding-left:30px;
+}
+.logo-intro-block{
+margin-top:10px;
+img{
+height: 60px;
+text-align: center;
+margin: 0 auto;
+display: inherit;
+}
+}
+// registration page starts here
+.reg-pages {
+background-position-y: 312px;
+height: 180px;
+margin-top: -50px;
+background-size: cover;
+background-color: #db4437;
+background-image: url("../img/cover2.jpg");
+}
+.registration-intro-block{
+h4{
+margin-top:60px ;
+font-size:24px;
+color:$primary-color-text;
+font-weight:400;
+}
+}
+.reg-form-area{
+	background:transparent;
+	margin-top:58px;
+
+}
+.form-margins {
+	margin-left:15px !important;
+	margin-top:7px !important;
 }
