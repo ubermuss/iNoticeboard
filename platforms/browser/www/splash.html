@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type="text/javascript" src="js/lib/js.cookie.js"></script>
+    <meta charset="utf-8" />
+     <script type="text/javascript" src="js/lib/js.cookie.js"></script>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link  rel="stylesheet" href="css/jasny-bootstrap.min.css">
+    <link  rel="stylesheet" href="css/navmenu-push.css">
+    <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/snackbar.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/ripples.min.css">
+    <link rel="stylesheet" href="css/jquery.dropdown.css">
+    <link rel="stylesheet" href="css/full-slider.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Custom styles for this template -->
+  </head>
+  <body >
+    <!-- registration-page-starts here -->
+     <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active fill">
+                <!-- Set the first background image using inline CSS below. -->
+                <div style=""></div>
+                <p class="splash-image-wrapper animated swing">
+                <img src="img/news.png" alt="">
+                </p>
+                <div class="carousel-caption">
+                <h3>All the news at one place</h3>
+                </div>
+            </div>
+            <div class="item fill">
+                <!-- Set the second background image using inline CSS below. -->
+                <div style=""></div>
+                <p class="other-splash-image-wrapper animated swing">
+                <img src="img/EALF.png" alt="">
+                </p>
+                <div class="carousel-caption">
+                <h3>Events, Advertisements and lost and found items</h3>
+                </div>
+            </div>
+            <div class="item fill">
+                <!-- Set the third background image using inline CSS below. -->        
+                <div style=""></div>
+                <p class="other-splash-image-wrapper animated swing">
+                <img src="img/faces.png" alt="">
+                </p>
+                <div class="carousel-caption">
+                  <h3>Your personal noticeboard</h3>
+                </div>
+            </div>
+        </div>
+        <div class="btn-continue">
+        <button name="submit"  class="btn btn-raised btn-default btn-signup with-ripple btn-skip" onclick="redirect_to('index.html')">Skip</button>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+          
+    </header>
+
+    <!-- Page Content -->
+    <div id="snackbar-container"><div id="snackbarid" class="snackbar" data-timeout="3000" data-html-allowed="false" data-content="Fill in the fields "><span class="snackbar-content">Fill in the fields</span></div></div>
+    <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
+    <script type="text/javascript" src="js/lib/ripples.min.js"></script>
+    <script type="text/javascript" src="js/lib/material.min.js"></script>
+    <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.dropdown.js"></script>
+    <script type="text/javascript" src="js/services/global.js"></script>
+    <script type="text/javascript" src="js/services/verify.js"></script>
+    <script>
+      var val = Cookies.getJSON("cred");
+      console.log(val.U_ID);
+    </script>
+    <!--   <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+      $('.carousel').carousel({
+        interval: 4000 //changes the speed
+    })
+    $.material.init();
+    $(".select").dropdown({autoinit: "select"});
+    app.initialize();
+    </script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+   <script type="text/javascript" src="js/lib/js.cookie.js"></script>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
@@ -9,7 +10,9 @@
     <link  rel="stylesheet" href="css/jasny-bootstrap.min.css">
     <link  rel="stylesheet" href="css/navmenu-push.css">
     <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/snackbar.min.css">
     <link rel="stylesheet" href="css/ripples.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Custom styles for this template -->
@@ -26,18 +29,18 @@
         </div>
           <div class="row form-area">
           <div class="col-xs-12">
-            <form class="form-horizontal">
+            <form class="form-horizontal" id="login">
   <fieldset>
     <div class="form-group form-elements form-group-custom">
-      <label for="inputEmail" class="col-md-2 control-label">Email</label>
+      <label for="inputEmail" class="col-md-2 control-label">Reg#</label>
       <div class="col-md-10">
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        <input type="text" class="form-control" name="RegNo" id="RegNo" placeholder="Registration number">
       </div>
     </div>
     <div class="form-group form-elements form-group-custom">
       <label for="inputPassword" class="col-md-2 control-label">Password</label>
       <div class="col-md-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        <input type="password" class="form-control" name="Password" id="Password" placeholder="Password">
         </div>
         </div>
         <div class="form-group">
@@ -49,14 +52,15 @@
     </form>
     <div class="row">
           <div class="col-xs-12 signup-intro-block">
-            <p class="signup-intro">Don't have an account?<a href="#">Sign up!</a></p>
+            <p class="signup-intro">Don't have an account?<a href="registration.html">Sign up!</a></p>
           </div>             
         </div>
          <div class="row">
-          <div class="col-xs-12 logo-intro-block">
+          <div class="col-xs-12 logo-intro-block animated bounceInUp">
             <img src="img/icon.png" alt="" class="intro-logo">
           </div>             
         </div>
+        <div id="snackbar-container"><div id="snackbarid" class="snackbar" data-timeout="3000" data-html-allowed="false" data-content="Fill in the fields "><span class="snackbar-content">Fill in the fields</span></div></div>
           </div>
           </div>
       </div>
@@ -70,6 +74,9 @@
   <script type="text/javascript" src="js/lib/material.min.js"></script>
   <script type="text/javascript" src="js/lib/materialize.min.js"></script>
   <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
+  <script type="text/javascript" src="js/services/global.js"></script>
+  <script type="text/javascript" src="js/services/login.js"></script>
+  <script type="text/javascript" src="js/lib/cookiesTest.js"></script>
   <!--   <script type="text/javascript" src="cordova.js"></script> -->
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript">

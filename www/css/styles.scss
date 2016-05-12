@@ -15,6 +15,14 @@ $dark-white:			#ececec;
 background-color:$primary-color !important;
 // box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
+// refresh button
+.activityTitle{
+	i{
+		float:right;
+		margin-right: 15px;
+		margin-top:1px;
+	}
+}
 .head{
 width:100%;
 background-image:url("backie.jpg");
@@ -100,6 +108,14 @@ font-size: 10px;
 }
 }
 }
+//progress bar
+.progress-wrapper{
+	margin-top:29px;
+}
+//minimized progress bar
+.mini-progress-wrapper{
+	margin-top:3px;
+}
 // tab customization
 .tab-content {
 margin-top:10px;
@@ -135,21 +151,37 @@ margin-top:8px;
 padding-left:1px !important;
 padding-right:1px !important;
 @include card(1);
+a{
+	color:$primary-text-color;
+}
 }
 // eventPage
+////spinner 
+.spinner-wrapper{
+	margin-top:120px;
+}
+.spinner-custom{
+	margin: 0 auto;
+		float:none;
+		display:-webkit-box !important;
+}
 .event-item-wrapper {
 @include wrapper;
 height: 110px;
 padding-top:15px;
 }
 .event-list{
-margin-top:8px;
-padding-left:1px !important;
-padding-right:1px !important;
-@include card(1);
+@include list-wrapper;
+@include margins;
 img{
 height : 80px;
 width :60px;
+}
+h4{
+margin-right:8px;
+}
+a{
+color:$primary-text-color;
 }
 }
 // event theme colors
@@ -284,15 +316,202 @@ h4{
 margin-top:60px ;
 font-size:24px;
 color:$primary-color-text;
-font-weight:400;
+font-weight:300;
 }
 }
 .reg-form-area{
-	background:transparent;
-	margin-top:58px;
-
+background:transparent;
+margin-top:58px;
 }
 .form-margins {
-	margin-left:15px !important;
-	margin-top:7px !important;
+margin-left:15px !important;
+margin-right:15px !important;
+margin-top:7px !important;
+}
+.btn-signup{
+	@include centering;
+	width:60%;
+	margin-bottom:20px;
+}
+// advertisements page
+.advert-item-wrapper{
+@include wrapper;
+padding-top:0;
+}
+.advert-image-wrapper{
+height:260px;
+padding-left:0;
+padding-right:0;
+img{
+height:100%;
+width:100%;
+object-fit: cover;
+}
+}
+.ad-title-wrapper{
+h4{
+padding-top:10px;
+}
+h4,p{
+padding-left:15px;
+}
+}
+.ad-list{
+@include list-wrapper;
+@include margins;
+}
+// personal message page starts here
+.mail-list{
+margin-top:30px;
+margin-right:16px;
+a{
+text-decoration:none;
+}
+}
+//about page
+.aboutpage-wrapper{
+background-image:url("../img/cover.jpg");
+background-size:cover;
+background-position:center center;
+height:100%;
+width:100%;
+margin-top: -3px;
+}
+.about-logo-intro-block{
+margin-top:40px;
+img{
+height:120px;
+}
+}
+.aboutpage-endings{
+margin-top:20px;
+text-align:center;
+h4{
+color:$primary-color-text;
+font-weight:400;
+font-size: 20px;
+}
+h5{
+color:$primary-color-text;
+font-size: 20px;
+}
+}
+// inner page
+.innerpage-wrapper{
+margin-top:20px;
+margin-left:5px;
+margin-right:5px;
+background-color:$primary-color-text;
+h3{
+color:$primary-color;
+}
+}
+.innerpage-contents{
+padding-top:10px;
+padding-bottom:50px;
+}
+// addnews page
+.news-btn-wrapper{
+padding-bottom:20px;
+button{
+margin:0 auto;
+width:100%;
+display:-webkit-box;
+}
+}
+// themes
+.red {
+	@include theme($red,$primary-color-text);
+}
+.pink {
+	@include theme($pink,$primary-color-text);
+}
+.purple {
+	@include theme($purple,$primary-color-text);
+}
+.deep-purple{
+	@include theme($deep-purple,$primary-color-text);
+}
+.indigo {
+	@include theme($indigo,$primary-color-text);
+}
+.light-blue {
+	@include theme($light-blue,$primary-color-text);
+}
+.blue {
+	@include theme($Blue,$primary-color-text);
+}
+.cyan {
+	@include theme($cyan,$primary-color-text);
+}
+.teal{
+	@include theme($Teal,$primary-text-color);
+}
+.green {
+	@include theme($Green,$primary-color-text);
+}
+.yellow {
+	@include theme($Yellow,$primary-text-color);
+}
+.orange{
+	@include theme($Orange,$primary-color-text);
+}
+.brown{
+	@include theme($Brown,$primary-color-text);
+}
+.grey {
+	@include theme($Grey,$primary-color-text);
+}
+.black {
+	@include theme($Black,$primary-color-text);
+}
+//splash page
+.btn-continue{
+    margin-top:-150px;
+}
+.btn-skip{
+	color:$primary-color;
+}
+.fill{
+	background-color:$primary-color;
+}
+.carousel-control.right {
+background-image: none;
+    background-image: none;
+    background-image:none;
+    background-image:none;
+    filter: none;
+    background-repeat: repeat-x;
+}
+.carousel-control.left {
+background-image: none;
+    background-image: none;
+    background-image:none;
+    background-image:none;
+    filter: none;
+    background-repeat: repeat-x;
+}
+.splash-image-wrapper{
+	text-align:center;
+	img{
+		margin-top:160px;
+	height: 150px;
+}
+}
+.other-splash-image-wrapper{
+	text-align:center;
+	img{
+		margin-top:160px;
+	height: 200px;
+}
+}
+.carousel-caption{
+	bottom:200px !important;
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+	.carousel-caption{
+	bottom:150px !important;
+}
 }

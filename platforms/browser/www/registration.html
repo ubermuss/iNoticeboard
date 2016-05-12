@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <script type="text/javascript" src="js/lib/js.cookie.js"></script>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
@@ -10,125 +11,141 @@
     <link  rel="stylesheet" href="css/navmenu-push.css">
     <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="css/helper.css">
+     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/snackbar.min.css">
     <link rel="stylesheet" href="css/ripples.min.css">
+    <link rel="stylesheet" href="css/jquery.dropdown.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Custom styles for this template -->
   </head>
   <body>
-  <!-- registration-page-starts here -->
-  <div class="reg-pages">
+    <!-- registration-page-starts here -->
+    <div class="reg-pages">
       <div class="log-content">
-        <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 registration-intro-block">
-            <h4 class="intro-header">Experience a revolutionary noticeboard</h4>
-          </div>  
-        </div>
-        <!-- forms starts here -->
-        <div class="row reg-form-area">
-        <div class="col-xs-12">
-                     <form class="form-horizontal">
-  <fieldset>
-   <div class="form-group form-elements">
-      <label for="inputFname" class="col-md-2 control-label">Firstname</label>
-      <div class="col-md-10">
-        <input type="text" class="form-control" id="inputFname" placeholder="Firstname">
-      </div>
-    </div>
-    <div class="form-group form-elements">
-      <label for="inputlname" class="col-md-2 control-label">Lastname</label>
-      <div class="col-md-10">
-        <input type="text" class="form-control" id="inputlname" placeholder="lastname">
-      </div>
-    </div>
-    <div class="form-group form-elements">
-      <label for="inputEmail" class="col-md-2 control-label">Email</label>
-      <div class="col-md-10">
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-      </div>
-    </div>
-    <div class="form-group form-elements">
-      <label for="inputPassword" class="col-md-2 control-label">Password</label>
-      <div class="col-md-10">
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-        </div>
-        </div>
-           <div class="form-group form-margins">
-      <label class="col-md-2 control-label">Radios</label>
-
-      <div class="col-md-10 col-md-offset-2">
-        <div class="radio radio-primary">
-          <label>
-            <input type="radio" name="gender" id="optionsRadios1" value="Male" checked="">
-            Male
-          </label>
-        </div>
-        <div class="radio radio-primary">
-          <label>
-            <input type="radio" name="gender" id="optionsRadios2" value="Female">
-            Female
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group form-margins">
-      <label for="select111" class="col-md-2 control-label">Year</label>
-
-      <div class="col-md-10">
-        <select id="select111" class="form-control">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-      </div>
-    </div>
-        <div class="form-group form-margins">
-      <label for="select111" class="col-md-2 control-label">Course</label>
-
-      <div class="col-md-10">
-        <select id="select111" class="form-control">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-      </div>
-    </div>
-      <div class="form-group form-margins">
-      <label for="select111" class="col-md-2 control-label">Faculty</label>
-
-      <div class="col-md-10">
-        <select id="select111" class="form-control">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-      </div>
-    </div>
-        <div class="form-group">
-      <div class="col-md-12">
-        <button type="#" class="btn btn-raised btn-success btn-signup with-ripple">Sign up</button>
-      </div>
-      </div>
-    </fieldset>
-    </form>
-        </div>
+        <div class="container-fluid ">
+          <div class="row ">
+            <div class="col-xs-12 registration-intro-block">
+              <h4 class="intro-header">Experience a revolutionary noticeboard</h4>
+            </div>
+          </div>
+          <!-- forms starts here -->
+          <div class="row reg-form-area">
           
+            <div class="col-xs-12">
+              <form class="form-horizontal animated fadeInUp" id="reg">
+                <fieldset>
+                  <div class="form-group form-elements">
+                    <label for="inputFname" class="col-md-2 control-label">Firstname</label>
+                    <div class="col-md-10">
+                      <input id="Fname" type="text" class="form-control" name="Fname"  placeholder="Firstname">
+                    </div>
+                  </div>
+                  <div class="form-group form-elements">
+                    <label for="inputlname" class="col-md-2 control-label">Lastname</label>
+                    <div class="col-md-10">
+                      <input type="text" class="form-control" name="Lname" id="Lname" placeholder="lastname">
+                    </div>
+                  </div>
+                    <div class="form-group form-elements">
+                    <label for="inputReg" class="col-md-2 control-label">Reg #</label>
+                    <div class="col-md-10">
+                      <input type="text" class="form-control" name="RegNo" id="RegNo" placeholder="Registartion number">
+                    </div>
+                  </div>
+                  <div class="form-group form-elements">
+                    <label for="inputEmail" class="col-md-2 control-label">Email</label>
+                    <div class="col-md-10">
+                      <input type="email" class="form-control" name="Email" id="Email" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group form-elements">
+                    <label for="inputPassword" class="col-md-2 control-label">Password</label>
+                    <div class="col-md-10">
+                      <input type="password" class="form-control" name="Password" id="Password" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group form-elements">
+                    <label for="inputPassword" class="col-md-2 control-label">Confirm</label>
+                    <div class="col-md-10">
+                      <input type="password" class="form-control" name="CPassword" id="CPassword" placeholder="Retype Password">
+                    </div>
+                  </div>
+                  <div class="form-group form-margins">
+                    <label class="col-md-2 control-label">Radios</label>
+                    <div class="col-md-10 col-md-offset-2">
+                      <div class="radio radio-primary">
+                        <label>
+                          <input type="radio" name="gender" id="optionsRadios1" value="Male" checked="">
+                          Male
+                        </label>
+                      </div>
+                      <div class="radio radio-primary">
+                        <label>
+                          <input type="radio" name="gender" id="optionsRadios2" value="Female">
+                          Female
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-margins">
+                    <label for="select111" class="col-md-2 control-label">Year</label>
+                    <div class="col-md-10">
+                      <select id="select111" name="Year" class="select form-control">
+                       <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-margins">
+                    <label for="select111" class="col-md-2 control-label">Course</label>
+                    <div class="col-md-10">
+                      <select id="select" name="Course" class="select form-control">
+                      <option value="1">ICT-B</option>
+                        <option value="2">ICT-M</option>
+                        <option value="3">ITS</option>
+                        <option value="4">LLB</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-margins">
+                    <label for="select111" class="col-md-2 control-label">Faculty</label>
+                    <div class="col-md-10">
+                      <select id="select" name="Faculty" class="select form-control" name="Theme">
+                        <option value="1">FST</option>
+                        <option value="2">FOL</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <button type="submit" name="submit"  class="btn btn-raised btn-success btn-signup with-ripple">Sign up</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+               <div id="snackbar-container"><div id="snackbarid" class="snackbar" data-timeout="3000" data-html-allowed="false" data-content="Fill in the fields "><span class="snackbar-content">Fill in the fields</span></div></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/lib/jasny-bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/lib/ripples.min.js"></script>
-  <script type="text/javascript" src="js/lib/material.min.js"></script>
-  <script type="text/javascript" src="js/lib/materialize.min.js"></script>
-  <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
-  <!--   <script type="text/javascript" src="cordova.js"></script> -->
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript">
-  $.material.init();
-  app.initialize();
-  </script>
-</body>
+    <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
+    <script type="text/javascript" src="js/lib/ripples.min.js"></script>
+    <script type="text/javascript" src="js/lib/material.min.js"></script>
+    <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.dropdown.js"></script>
+    <script type="text/javascript" src="js/services/global.js"></script>
+    <script type="text/javascript" src="js/services/registration.js"></script>
+    <!--   <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+    $.material.init();
+    $(".select").dropdown({autoinit: "select"});
+    app.initialize();
+    </script>
+  </body>
 </html>

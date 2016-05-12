@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script type="text/javascript" src="js/lib/js.cookie.js"></script>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link  rel="stylesheet" href="css/jasny-bootstrap.min.css">
+    <link  rel="stylesheet" href="css/navmenu-push.css">
+    <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/snackbar.min.css">
+    <link rel="stylesheet" href="css/ripples.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Custom styles for this template -->
+  </head>
+  <body>
+    <div class="navmenu navmenu-custom navmenu-fixed-left offcanvas">
+      <div class="head">
+        <a class="navmenu-brand" href="#">
+          <img src="img/muss.png" alt="..." class="img-circle avatar">
+          <p class="username" id="Uname">Mussa Kalokola</p><p class="coursename"></p></a>
+        </div>
+        <ul class="nav navmenu-nav">
+          <li><a href="index.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">home</i><p class="navlable">Home</p></a></li>
+          <li><a href="advertise.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">loyalty</i><p class="navlable">Adverts</p></a></li>
+          <li><a href="events.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">local_play</i><p class="navlable">Events</p></a></li>
+          <li class="active"><a href="lostxfound.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">developer_board</i><p class="navlable">Lost and found</p></a></li>
+          <li><a href="personal.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">inbox</i><p class="navlable">Pesonal</p></a></li>
+          <hr>
+          <li><a href="about.html" class="withripple"  data-ripple-color="#F44336"><i class="material-icons icon-margin">info_outline</i><p class="navlable">About</p></a></li>
+          <li><a href="#" class="withripple" data-ripple-color="#F44336" onclick="log_out()"><i class="material-icons icon-margin">exit_to_app</i><p class="navlable">Log out</p></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-theme navbar  navbar-fixed-top ">
+    <button type="button" class="navbar-toggle withripple" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+    <a href="#"><i class="material-icons menu-btn">menu</i></a>
+    </button>
+    <div class="activityTitle">
+      <p>Lost and found<i class="material-icons" onclick="getLF()">refresh</i></p>
+    </div>
+  </div>
+   <div class="mini-progress-wrapper" id="progress-bar">
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+  </div>
+  <!-- <div class="progress-wrapper">
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div> -->
+  </div>
+  <!-- tabg goes here | all X faculty X course X Class -->
+  <div class="tabs">
+      <div class="tab-content">
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-xs-12 news-wrapper" id="lostxfound-update">
+         <!-- lost and found items are inserted here -->
+            </div>
+           </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="snackbar-container"><div id="snackbarid" class="snackbar" data-timeout="3000" data-html-allowed="false" data-content="Fill in the fields "><span class="snackbar-content">Fill in the fields</span></div></div>
+  <!-- tabs end here -->
+  <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lib/jasny-bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lib/ripples.min.js"></script>
+  <script type="text/javascript" src="js/lib/material.min.js"></script>
+  <script type="text/javascript" src="js/lib/materialize.min.js"></script>
+  <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
+  <script type="text/javascript" src="js/services/global.js"></script>
+    <script type="text/javascript" src="js/services/lostxfound.js"></script>
+  <!--   <script type="text/javascript" src="cordova.js"></script> -->
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+  $.material.init();
+  app.initialize();
+  </script>
+</body>
+</html>
