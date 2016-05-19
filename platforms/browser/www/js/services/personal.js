@@ -16,9 +16,9 @@ $.each(data,function(key,val){
      output+="<div class='list-group-item'>";
      output+="<div class='row-action-primary'><i class='material-icons'>mail</i>";
       output+="</div><div class='row-content'>";
-      output+="<div class='least-content'>"+val.Date+"</div>";
-      output+="<h4 class='list-group-item-heading'><a href='innerPersonal.html'>"+val.Title+"</a></h4>";
-      output+="<p class='list-group-item-text'>"+val.content+".</p>";
+      output+="<div class='least-content' id='msg-content'>"+val.Date+"</div>";
+      output+="<h4 class='list-group-item-heading'><a href='innerP.html?P_ID="+val.P_ID+"'>"+val.Title+"</a></h4>";
+      output+="<p class='list-group-item-text'>from "+val.Author+".</p>";
     output+="</div>";
   output+="</div>";
   output+="<div class='list-group-separator'> </div>";

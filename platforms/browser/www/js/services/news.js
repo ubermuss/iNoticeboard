@@ -7,7 +7,7 @@ function getAllNews(){
 $.ajax
 ({
    dataType:"json",
-   url:url+"broadcastnews.php",
+   url:url+"broadcastNews.php",
    data:"data",
    cache:false,
    success:function(data){

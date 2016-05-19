@@ -1,5 +1,5 @@
-var url="http://localhost:8012/inoticeboard/public/api/";
-var siteUrl="http://localhost:8012/inoticeboard/public/";
+var url="http://inoticeboard.16mb.com/public/api/";
+var siteUrl="http://inoticeboard.16mb.com/public/";
 function getID (pos){
 nparam = window.location.href.substr(window.location.href.lastIndexOf('?')+pos);
 return nparam;

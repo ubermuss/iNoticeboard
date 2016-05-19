@@ -18,6 +18,7 @@ $.ajax
       output+="</div></div><div class='row ad-title-wrapper'><div class8/='col-xs-12'>";
       output+="<h4 class='newTitle'>"+val.Title+"</h4>";
       output+="<p class='ad-caption'>"+val.Description+"</p>";
+      output+="<p class='ad-caption'><a href='tel:"+val.Contacts+"' >"+val.Contacts+"</a></p>";
       output+="</div></div></div></li>";
      })
      output+="</ul>";

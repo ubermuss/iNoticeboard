@@ -6,7 +6,8 @@
      <script type="text/javascript" src="js/lib/js.cookie.js"></script>
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <!--   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link  rel="stylesheet" href="css/jasny-bootstrap.min.css">
     <link  rel="stylesheet" href="css/navmenu-push.css">
@@ -30,7 +31,7 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-
+          
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active fill">
@@ -60,12 +61,13 @@
                 <img src="img/faces.png" alt="">
                 </p>
                 <div class="carousel-caption">
+                  <h4 id="name">Hi!, Muss</h4>
                   <h3>Your personal noticeboard</h3>
                 </div>
             </div>
         </div>
         <div class="btn-continue">
-        <button name="submit"  class="btn btn-raised btn-default btn-signup with-ripple btn-skip" onclick="redirect_to('index.html')">Skip</button>
+        <button name="submit" id="continue-btn" class="btn btn-raised btn-default btn-signup with-ripple btn-skip" onclick="redirect_to('index.html')">Skip</button>
         </div>
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -93,12 +95,16 @@
       var val = Cookies.getJSON("cred");
       console.log(val.U_ID);
     </script>
-    <!--   <script type="text/javascript" src="cordova.js"></script> -->
+      <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
       $('.carousel').carousel({
         interval: 4000 //changes the speed
     })
+    $('#name').html("hi, "+val.First_name+"!");
+    $("#continue-btn").hide().delay(9000).addClass("animated bounceIn").queue(function(n) {
+  $(this).show(); n();
+});
     $.material.init();
     $(".select").dropdown({autoinit: "select"});
     app.initialize();

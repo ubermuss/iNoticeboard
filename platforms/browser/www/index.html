@@ -11,7 +11,7 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link  rel="stylesheet" href="css/jasny-bootstrap.min.css">
     <link  rel="stylesheet" href="css/navmenu-push.css">
@@ -53,16 +53,17 @@
   </div>
   <!-- tabg goes here | all X faculty X course X Class -->
   <div class="tabs">
-    <div class="container">
-      <div class="row tab-navigation">
+     <div class="row tab-navigation">
         <div class="col-xs-12 tabbable">
           <!-- Tabs go here -->
+          <div class="tab-margin">
           <ul id="myTab" class="nav nav-tabs">
             <li class="active"><a href="#android" data-toggle="tab" onclick="getAllNews()">All</a></li>
             <li><a href="#bb" data-toggle="tab" onclick="getFacultyNews()">Faculty</a></li>
             <li><a href="#ios" data-toggle="tab" onclick="getCourseNews()">Course</a></li>
             <li><a href="#win" data-toggle="tab" onclick="getClassNews()">Class</a></li>
           </ul>
+          </div>
         </div>
          <div class="progress-wrapper" id="progress-bar">
     <div class="progress">
@@ -70,6 +71,8 @@
     </div>
   </div>
       </div>
+    <div class="container">
+   
       <div class="tab-content">
         <div class="container-fluid">
         <div class="row">
@@ -96,7 +99,7 @@
   <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
   <script type="text/javascript" src="js/services/global.js"></script>
   <script type="text/javascript" src="js/services/news.js"></script>
-  <!--   <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript">
   $.material.init();
