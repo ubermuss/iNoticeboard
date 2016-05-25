@@ -42,12 +42,10 @@ $("#login").submit(function(e){
 		return false;
 	} else {
 		// Capture the user cookies
-		console.log(response.U_ID);
-		Cookies.set(response);
-		var values;
-		values = Cookies.set("cred",response);
-		var info = Cookies.getJSON("cred");
-		console.log(info);
+		var dataToStore = JSON.stringify(response);
+		console.log(dataToStore);
+		localStorage.setItem('cred', dataToStore);
+		var localData = JSON.parse(localStorage.getItem('cred'));
 		window.location.href="splash.html";
 		//redirect to the index page
 		// window.location="index.html";

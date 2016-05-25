@@ -101,30 +101,52 @@
 }
 
 /* line 74, styles.scss */
+.drawer-icon {
+  height: 20px;
+}
+
+/* line 77, styles.scss */
 .navlable {
   display: inline;
   font-weight: 500;
 }
 
-/* line 78, styles.scss */
-.active a {
+/* line 81, styles.scss */
+.actived a {
   color: #ff5252;
 }
 
-/* line 81, styles.scss */
+/* line 84, styles.scss */
+.actived {
+  background: #f2f2f2;
+}
+
+/* line 87, styles.scss */
 .tab-navigation {
   background: #db4437;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-/* line 85, styles.scss */
+/* line 91, styles.scss */
+.refresh-icon {
+  float: right;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+/* line 96, styles.scss */
+.menu-icon {
+  height: 15px;
+}
+
+/* line 99, styles.scss */
 .nav-tabs {
   background: transparent;
   float-left: none;
   margin: 0 auto;
   border-bottom-width: 0px;
 }
-/* line 91, styles.scss */
+/* line 106, styles.scss */
 .nav-tabs li a {
   font-weight: 300;
   text-transform: uppercase;
@@ -132,94 +154,99 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 103, styles.scss */
+  /* line 119, styles.scss */
   .nav-tabs li a {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 10px;
   }
 }
-/* line 112, styles.scss */
+/* line 128, styles.scss */
 .progress-wrapper {
   margin-top: 29px;
 }
 
-/* line 116, styles.scss */
+/* line 132, styles.scss */
 .mini-progress-wrapper {
   margin-top: 3px;
 }
 
-/* line 120, styles.scss */
+/* line 136, styles.scss */
 .tab-content {
   margin-top: 10px;
 }
 
-/* line 123, styles.scss */
+/* line 139, styles.scss */
 .item-wrapper {
   background-color: white;
   padding: 5px 8px 5px 8px;
 }
 
-/* line 126, styles.scss */
+/* line 142, styles.scss */
 .news-wrapper {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 130, styles.scss */
+/* line 146, styles.scss */
 .list-divider {
   width: 100%;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-/* line 135, styles.scss */
+/* line 151, styles.scss */
 .newTitle {
   margin-top: 5px;
   font-weight: 400;
 }
 
-/* line 139, styles.scss */
+/* line 155, styles.scss */
 .authorTitle {
   margin-bottom: 3px;
 }
 
-/* line 142, styles.scss */
+/* line 158, styles.scss */
 .dateTitle {
   margin-bottom: 5px;
 }
 
-/* line 145, styles.scss */
+/* line 161, styles.scss */
 .author-avatar {
   height: 40px;
   width: 40px;
 }
 
-/* line 149, styles.scss */
+/* line 165, styles.scss */
 .news-list {
   margin-top: 8px;
   padding-left: 1px !important;
   padding-right: 1px !important;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
-/* line 154, styles.scss */
+/* line 170, styles.scss */
 .news-list a {
   color: #212121;
 }
 
-/* line 160, styles.scss */
+/* line 176, styles.scss */
+.event-item-margin {
+  margin-bottom: 15px;
+}
+
+/* line 179, styles.scss */
 .spinner-wrapper {
   margin-top: 120px;
 }
 
-/* line 163, styles.scss */
+/* line 182, styles.scss */
 .spinner-custom {
   margin: 0 auto;
   float: none;
   display: -webkit-box !important;
 }
 
-/* line 168, styles.scss */
+/* line 187, styles.scss */
 .event-item-wrapper {
   background-color: white;
   padding: 5px 8px 5px 8px;
@@ -227,7 +254,7 @@
   padding-top: 15px;
 }
 
-/* line 173, styles.scss */
+/* line 192, styles.scss */
 .event-list {
   margin-top: 16px;
   padding-left: 1px !important;
@@ -236,44 +263,44 @@
   margin-left: 15px;
   margin-right: 15px;
 }
-/* line 176, styles.scss */
+/* line 195, styles.scss */
 .event-list img {
   height: 80px;
   width: 60px;
 }
-/* line 180, styles.scss */
+/* line 199, styles.scss */
 .event-list h4 {
   margin-right: 8px;
 }
-/* line 183, styles.scss */
+/* line 202, styles.scss */
 .event-list a {
   color: #212121;
 }
 
-/* line 204, styles.scss */
+/* line 207, styles.scss */
 .event-content {
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
-/* line 207, styles.scss */
+/* line 210, styles.scss */
 .event-image-wrapper {
   height: 250px;
 }
-/* line 209, styles.scss */
+/* line 212, styles.scss */
 .event-image-wrapper img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-/* line 215, styles.scss */
+/* line 218, styles.scss */
 .event-title-wrapper {
   background-color: #212121;
   color: white;
   padding: 10px;
 }
 
-/* line 220, styles.scss */
+/* line 223, styles.scss */
 .description-wrapper {
   background-color: white;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
@@ -281,28 +308,28 @@
   padding-left: 30px;
   margin-top: 20px;
 }
-/* line 226, styles.scss */
+/* line 229, styles.scss */
 .description-wrapper li:first-child {
   padding-top: 10px;
 }
-/* line 229, styles.scss */
+/* line 232, styles.scss */
 .description-wrapper li:last-child {
   padding-bottom: 10px;
 }
 
-/* line 233, styles.scss */
+/* line 236, styles.scss */
 .desc-info {
   font-weight: 600;
   font-size: 17px;
   color: #db4437;
 }
 
-/* line 238, styles.scss */
+/* line 241, styles.scss */
 .desc-text {
   padding: 10px;
 }
 
-/* line 241, styles.scss */
+/* line 244, styles.scss */
 .desc-header {
   font-weight: 400;
   font-size: 16px;
@@ -310,21 +337,15 @@
   margin-bottom: 4px;
 }
 
-/* line 247, styles.scss */
+/* line 250, styles.scss */
 .event-details-wrapper {
   margin-top: 10px;
 }
 
-/* line 251, styles.scss */
+/* line 254, styles.scss */
 .log-pages {
   margin-top: -50px;
   height: 100vh;
-  background: #EB3349;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #eb3349, #f45c43);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #eb3349, #f45c43);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* line 258, styles.scss */
@@ -712,7 +733,30 @@
   min-height: 56px;
 }
 
-/* line 529, styles.scss */
-.tab-margin {
-  padding-left: 15px;
+/* line 532, styles.scss */
+.body-background {
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #eb3349, #f45c43);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #eb3349, #f45c43);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 0;
+}
+
+/* line 538, styles.scss */
+.active {
+  background: none;
+  border: 3px solid white;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+/* line 545, styles.scss */
+.spin-border {
+  border-bottom: none !important;
+}
+.alarm-icon{
+  /*padding-left: 10px;*/
 }

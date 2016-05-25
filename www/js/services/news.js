@@ -1,5 +1,5 @@
 //get broadcasted news posted on the php server
-var val = Cookies.getJSON("cred");
+var val = JSON.parse(localStorage.getItem('cred'));
 $('#progress-bar').show();
 getAllNews();
 function getAllNews(){

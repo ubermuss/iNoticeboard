@@ -41,10 +41,10 @@
     </div>
     <div class="navbar-theme navbar  navbar-fixed-top ">
         <button type="button" class="navbar-toggle withripple" data-target=".navmenu" data-canvas="body">
-        <a href="#" onclick="history.back()"><i class="material-icons menu-btn">arrow_back</i></a>
+        <a href="events.html"><img src="img/arrowBack.png" alt="" class="menu-icon menu-icon"></a>
         </button>
         <div class="activityTitle">
-            <p>Events<i class="material-icons" onclick="getInnerEvents()">refresh</i></p>
+            <p>Events<img src="img/refresh.png" alt="" class="drawer-icon refresh-icon" onclick="getInnerEvents()"></p></p>
         </div>
     </div>
 </div>
@@ -57,7 +57,7 @@
             <!-- main content ends here -->
             <!-- spinner/loader goes in here -->
             <div class="row spinner-wrapper" id="event-spinner">
-                <div class="spinner-custom preloader-wrapper big active ">
+                <div class="spinner-custom preloader-wrapper big active spin-border">
                     <div class="spinner-layer spinner-red-only">
                         <div class="circle-clipper left">
                             <div class="circle"></div>
@@ -88,7 +88,7 @@
 <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
 <script type="text/javascript" src="js/services/global.js"></script>
 <script type="text/javascript" src="js/services/innerEvent.js"></script>
-  <script type="text/javascript" src="cordova.js"></script>
+ <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
 $.material.init();

@@ -1,2 +1,2 @@
-var cookies = Cookies.get("cred");
-console.log(cookies);
+var val = JSON.parse(localStorage.getItem('cred'));
+console.log(val);

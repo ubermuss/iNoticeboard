@@ -13,7 +13,7 @@ $.ajax
     output+="<div class='col-xs-12 innerpage-header'>";
     output+="<h3>"+val.Title+"</h3>"
     output+="<p>"+val.Author+"</p>";
-    output+="<p><i class='material-icons icon-margin'>alarm</i>"+val.Date+"</p>";
+    output+="<p><img src='img/set-alarm.png' alt='' class='menu-icon menu-icon alarm-icon'>"+val.Date+"</p>";
    	output+="<hr></div></div><div class='row'>";
     output+="<div class='col-xs-12 innerpage-contents'>";
     output+="<p>"+val.content+"</p>";

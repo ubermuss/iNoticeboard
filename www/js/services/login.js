@@ -1,3 +1,11 @@
+$('#login').on('keydown', 'input', function (event) {
+    if (event.which == 13) {
+        event.preventDefault();
+        var $this = $(event.target);
+        var index = parseFloat($this.attr('data-index'));
+        $('[data-index="' + (index + 1).toString() + '"]').focus();
+    }
+});
 //var a = $("#snackbarid").attr('data-content','Passwords dont match')
 var request;
 $("#login").submit(function(e){
@@ -42,15 +50,19 @@ $("#login").submit(function(e){
 		return false;
 	} else {
 		// Capture the user cookies
-		console.log(response.U_ID);
-		Cookies.set(response);
-		var values;
-		values = Cookies.set("cred",response);
-		var info = Cookies.getJSON("cred");
-		console.log(info);
-		window.location.href="index.html";
+		var dataToStore = JSON.stringify(response);
+		console.log(dataToStore);
+		localStorage.setItem('cred', dataToStore);
+		var localData = JSON.parse(localStorage.getItem('cred'));
+		//console.log(response.U_ID);
+		//Cookies.set(response);
+		//var values;
+		//values = Cookies.set("cred",response);
+		//var info = Cookies.getJSON("cred");
+		//console.log(info);
+		// window.location.href="index.html";
 		//redirect to the index page
-		// window.location="index.html";
+		window.location="index.html";
 	}
 	});
 	// on error return the errors occured

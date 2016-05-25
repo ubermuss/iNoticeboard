@@ -3,12 +3,12 @@
   <head>
      <script type="text/javascript" src="js/lib/js.cookie.js"></script>
      <script type="text/javascript">
-       var val = Cookies.getJSON("cred");
+      var val = JSON.parse(localStorage.getItem('cred'));
        if(val==null){
             window.location.href="login.html";
        }
      </script>
-    <meta charset="utf-8" />
+       <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0" />
@@ -23,36 +23,37 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Custom styles for this template -->
   </head>
-  <body>
     <div class="navmenu navmenu-custom navmenu-fixed-left offcanvas">
       <div class="head">
         <a class="navmenu-brand" href="#">
           <img src="img/muss.png" alt="..." class="img-circle avatar">
           <p class="username" id="Uname">Mussa Kalo</p></a>
         </div>
-        <ul class="nav navmenu-nav">
-       <li class="active"><a href="index.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">home</i><p class="navlable">Home</p></a></li>
-          <li><a href="advertise.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">loyalty</i><p class="navlable">Adverts</p></a></li>
-          <li><a href="events.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">local_play</i><p class="navlable">Events</p></a></li>
-          <li><a href="lostxfound.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">developer_board</i><p class="navlable">Lost and found</p></a></li>
-          <li><a href="personal.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">inbox</i><p class="navlable">Pesonal</p></a></li>
+  <ul class="nav navmenu-nav">
+         <li><a href="index.html" class="withripple actived" data-ripple-color="#F44336">
+         <img src="img/home.png" alt="" class="drawer-icon icon-margin"><p class="navlable">Home</p></a></li>
+          <li><a href="advertise.html" class="withripple" data-ripple-color="#F44336"><img src="img/megaphone.png" alt="" class="drawer-icon icon-margin"><p class="navlable">Adverts</p></a></li>
+          <li><a href="events.html" class="withripple" data-ripple-color="#F44336"><img src="img/events.png" alt="" class="drawer-icon icon-margin"><p class="navlable">Events</p></a></li>
+          <li><a href="lostxfound.html" class="withripple" data-ripple-color="#F44336"><img src="img/magnifier.png" alt="" class="drawer-icon icon-margin"><p class="navlable">Lost and found</p></a></li>
+          <li><a href="personal.html" class="withripple" data-ripple-color="#F44336"><img src="img/inbox.png" alt="" class="drawer-icon icon-margin"><p class="navlable">Pesonal</p></a></li>
           <hr>
-          <li><a href="about.html" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">info_outline</i><p class="navlable">About</p></a></li>
-          <li><a href="#" onclick="log_out()" class="withripple" data-ripple-color="#F44336"><i class="material-icons icon-margin">exit_to_app</i><p class="navlable">Log out</p></a></li>
+          <li><a href="about.html" class="withripple" data-ripple-color="#F44336"><img src="img/info.png" alt="" class="drawer-icon icon-margin"><p class="navlable">About</p></a></li>
+          <li><a href="#" class="withripple" data-ripple-color="#F44336" onclick="log_out()"><img src="img/exit.png" alt="" class="drawer-icon icon-margin"><p class="navlable">Log out</p></a></li>
         </ul>
       </li>
     </ul>
   </div>
   <div class="navbar-theme navbar  navbar-fixed-top ">
     <button type="button" class="navbar-toggle withripple" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
-    <a href="#"><i class="material-icons menu-btn">menu</i></a>
+     <a href="#"><img src="img/menu.png" alt="" class="menu-icon menu-icon"></a>
     </button>
     <div class="activityTitle">
-      <p>iNoticeboard<i class="material-icons" onclick="location.reload()">refresh</i></p>
+      <p>iNoticeboard<!-- <i class="material-icons" onclick="getEvents()">refresh</i> --><img src="img/refresh.png" alt="" class="drawer-icon refresh-icon" onclick="location.reload()"></p>
     </div>
   </div>
   <!-- tabg goes here | all X faculty X course X Class -->
   <div class="tabs">
+  <div class="container-fluid">
      <div class="row tab-navigation">
         <div class="col-xs-12 tabbable">
           <!-- Tabs go here -->
@@ -70,6 +71,7 @@
       <div class="indeterminate"></div>
     </div>
   </div>
+      </div>
       </div>
     <div class="container">
    
@@ -99,7 +101,7 @@
   <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
   <script type="text/javascript" src="js/services/global.js"></script>
   <script type="text/javascript" src="js/services/news.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript">
   $.material.init();

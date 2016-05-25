@@ -92,8 +92,8 @@
     <script type="text/javascript" src="js/services/global.js"></script>
     <script type="text/javascript" src="js/services/verify.js"></script>
     <script>
-      var val = Cookies.getJSON("cred");
-      console.log(val.U_ID);
+      var localData = JSON.parse(localStorage.getItem('cred'));
+      console.log(localData.First_name);
     </script>
       <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -101,7 +101,7 @@
       $('.carousel').carousel({
         interval: 4000 //changes the speed
     })
-    $('#name').html("hi, "+val.First_name+"!");
+    $('#name').html("hi, "+localData.First_name+"!");
     $("#continue-btn").hide().delay(9000).addClass("animated bounceIn").queue(function(n) {
   $(this).show(); n();
 });
