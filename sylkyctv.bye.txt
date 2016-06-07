@@ -1,0 +1,63 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   platforms/browser/www/about.html
+#	modified:   platforms/browser/www/advertise.html
+#	modified:   platforms/browser/www/css/styles.css
+#	modified:   platforms/browser/www/css/styles.scss
+#	modified:   platforms/browser/www/events.html
+#	modified:   platforms/browser/www/eventsPage.html
+#	new file:   platforms/browser/www/img/avatar.png
+#	deleted:    platforms/browser/www/img/cover.jpg
+#	deleted:    platforms/browser/www/img/download.jpg
+#	deleted:    platforms/browser/www/img/event1.jpg
+#	deleted:    platforms/browser/www/img/event2.jpg
+#	deleted:    platforms/browser/www/img/event3.jpg
+#	deleted:    platforms/browser/www/img/mail.rar
+#	modified:   platforms/browser/www/index.html
+#	modified:   platforms/browser/www/index2.html
+#	modified:   platforms/browser/www/inner.html
+#	modified:   platforms/browser/www/innerP.html
+#	modified:   platforms/browser/www/js/services/global.js
+#	modified:   platforms/browser/www/js/services/news.js
+#	modified:   platforms/browser/www/js/services/personal.js
+#	modified:   platforms/browser/www/js/services/registration.js
+#	modified:   platforms/browser/www/login.html
+#	modified:   platforms/browser/www/lostxfound.html
+#	modified:   platforms/browser/www/personal.html
+#	modified:   platforms/browser/www/registration.html
+#	modified:   platforms/browser/www/splash.html
+#	modified:   platforms/browser/www/verify.html
+#	modified:   www/about.html
+#	modified:   www/advertise.html
+#	modified:   www/css/styles.css
+#	modified:   www/css/styles.scss
+#	modified:   www/events.html
+#	modified:   www/eventsPage.html
+#	new file:   www/img/avatar.png
+#	deleted:    www/img/cover.jpg
+#	deleted:    www/img/download.jpg
+#	deleted:    www/img/event1.jpg
+#	deleted:    www/img/event2.jpg
+#	deleted:    www/img/event3.jpg
+#	deleted:    www/img/mail.rar
+#	modified:   www/index.html
+#	modified:   www/index2.html
+#	modified:   www/inner.html
+#	modified:   www/innerP.html
+#	modified:   www/js/services/global.js
+#	modified:   www/js/services/news.js
+#	modified:   www/js/services/personal.js
+#	modified:   www/js/services/registration.js
+#	modified:   www/login.html
+#	modified:   www/lostxfound.html
+#	modified:   www/personal.html
+#	modified:   www/registration.html
+#	modified:   www/splash.html
+#	modified:   www/verify.html
+#
+

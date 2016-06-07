@@ -31,7 +31,17 @@ $("#reg").submit(function(e){
 		$("#snackbarid").snackbar("show");
 		$("#snackbarid").snackbar("toggle");
 		return false;
-	} else if($('#Password').val()!=$('#CPassword').val()){
+		// checks password length
+	}else if($('#Password').val().length<7){
+		console.log($('#Password').val().length);
+		$("#snackbarid").attr('data-content','Weak password :(, atleast 8 charecters');
+		$("#snackbarid").snackbar("show");
+		$("#snackbarid").snackbar("toggle");
+		$("#snackbarid").attr('data-content','Fill in the fields');
+		return false;
+	} 
+	// compares passwords entered
+	else if($('#Password').val()!=$('#CPassword').val()){
 		$("#snackbarid").attr('data-content','Passwords dont match');
 		$("#snackbarid").snackbar("show");
 		$("#snackbarid").snackbar("toggle");

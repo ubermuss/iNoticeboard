@@ -76,77 +76,78 @@
 
 /* line 56, styles.scss */
 .username {
-  margin-top: 28px;
+  margin-top: 18px;
   font-weight: 400;
   font-size: 14px;
+  margin-bottom: 0;
 }
 
-/* line 61, styles.scss */
-.coursename {
+/* line 62, styles.scss */
+.emailWrrapper {
   font-size: small;
   font-weight: 300;
   margin-top: -14px;
 }
 
-/* line 66, styles.scss */
+/* line 67, styles.scss */
 .avatar {
   width: 60px;
   height: 60px;
   padding-bottom: 0;
 }
 
-/* line 71, styles.scss */
+/* line 72, styles.scss */
 .icon-margin {
   margin-right: 32px;
 }
 
-/* line 74, styles.scss */
+/* line 75, styles.scss */
 .drawer-icon {
   height: 20px;
 }
 
-/* line 77, styles.scss */
+/* line 78, styles.scss */
 .navlable {
   display: inline;
   font-weight: 500;
 }
 
-/* line 81, styles.scss */
+/* line 82, styles.scss */
 .actived a {
   color: #ff5252;
 }
 
-/* line 84, styles.scss */
+/* line 85, styles.scss */
 .actived {
   background: #f2f2f2;
 }
 
-/* line 87, styles.scss */
+/* line 88, styles.scss */
 .tab-navigation {
   background: #db4437;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-/* line 91, styles.scss */
+/* line 92, styles.scss */
 .refresh-icon {
   float: right;
   margin-right: 15px;
   margin-top: 3px;
 }
 
-/* line 96, styles.scss */
+/* line 97, styles.scss */
 .menu-icon {
   height: 15px;
 }
 
-/* line 99, styles.scss */
+/* line 100, styles.scss */
 .nav-tabs {
   background: transparent;
   float-left: none;
   margin: 0 auto;
   border-bottom-width: 0px;
 }
-/* line 106, styles.scss */
+/* line 107, styles.scss */
 .nav-tabs li a {
   font-weight: 300;
   text-transform: uppercase;
@@ -154,99 +155,104 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 119, styles.scss */
+  /* line 120, styles.scss */
   .nav-tabs li a {
     font-weight: 300;
     text-transform: uppercase;
     font-size: 10px;
   }
 }
-/* line 128, styles.scss */
+/* line 129, styles.scss */
 .progress-wrapper {
   margin-top: 29px;
 }
 
-/* line 132, styles.scss */
+/* line 133, styles.scss */
 .mini-progress-wrapper {
   margin-top: 3px;
 }
 
-/* line 136, styles.scss */
+/* line 137, styles.scss */
 .tab-content {
   margin-top: 10px;
 }
 
-/* line 139, styles.scss */
+/* line 140, styles.scss */
 .item-wrapper {
   background-color: white;
   padding: 5px 8px 5px 8px;
 }
 
-/* line 142, styles.scss */
+/* line 143, styles.scss */
 .news-wrapper {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 146, styles.scss */
+/* line 147, styles.scss */
 .list-divider {
   width: 100%;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-/* line 151, styles.scss */
+/* line 152, styles.scss */
 .newTitle {
   margin-top: 5px;
   font-weight: 400;
 }
 
-/* line 155, styles.scss */
+/* line 156, styles.scss */
 .authorTitle {
   margin-bottom: 3px;
 }
 
-/* line 158, styles.scss */
+/* line 159, styles.scss */
 .dateTitle {
   margin-bottom: 5px;
 }
 
-/* line 161, styles.scss */
+/* line 162, styles.scss */
 .author-avatar {
   height: 40px;
   width: 40px;
 }
 
-/* line 165, styles.scss */
+/* line 166, styles.scss */
+.badge {
+  background: #4CAF50;
+}
+
+/* line 169, styles.scss */
 .news-list {
   margin-top: 8px;
   padding-left: 1px !important;
   padding-right: 1px !important;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
-/* line 170, styles.scss */
+/* line 174, styles.scss */
 .news-list a {
   color: #212121;
 }
 
-/* line 176, styles.scss */
+/* line 180, styles.scss */
 .event-item-margin {
   margin-bottom: 15px;
 }
 
-/* line 179, styles.scss */
+/* line 183, styles.scss */
 .spinner-wrapper {
   margin-top: 120px;
 }
 
-/* line 182, styles.scss */
+/* line 186, styles.scss */
 .spinner-custom {
   margin: 0 auto;
   float: none;
   display: -webkit-box !important;
 }
 
-/* line 187, styles.scss */
+/* line 191, styles.scss */
 .event-item-wrapper {
   background-color: white;
   padding: 5px 8px 5px 8px;
@@ -254,7 +260,7 @@
   padding-top: 15px;
 }
 
-/* line 192, styles.scss */
+/* line 196, styles.scss */
 .event-list {
   margin-top: 16px;
   padding-left: 1px !important;
@@ -263,44 +269,44 @@
   margin-left: 15px;
   margin-right: 15px;
 }
-/* line 195, styles.scss */
+/* line 199, styles.scss */
 .event-list img {
   height: 80px;
   width: 60px;
 }
-/* line 199, styles.scss */
+/* line 203, styles.scss */
 .event-list h4 {
   margin-right: 8px;
 }
-/* line 202, styles.scss */
+/* line 206, styles.scss */
 .event-list a {
   color: #212121;
 }
 
-/* line 207, styles.scss */
+/* line 211, styles.scss */
 .event-content {
   margin-top: 6px;
 }
 
-/* line 210, styles.scss */
+/* line 214, styles.scss */
 .event-image-wrapper {
   height: 250px;
 }
-/* line 212, styles.scss */
+/* line 216, styles.scss */
 .event-image-wrapper img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-/* line 218, styles.scss */
+/* line 222, styles.scss */
 .event-title-wrapper {
   background-color: #212121;
   color: white;
   padding: 10px;
 }
 
-/* line 223, styles.scss */
+/* line 227, styles.scss */
 .description-wrapper {
   background-color: white;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
@@ -308,28 +314,28 @@
   padding-left: 30px;
   margin-top: 20px;
 }
-/* line 229, styles.scss */
+/* line 233, styles.scss */
 .description-wrapper li:first-child {
   padding-top: 10px;
 }
-/* line 232, styles.scss */
+/* line 236, styles.scss */
 .description-wrapper li:last-child {
   padding-bottom: 10px;
 }
 
-/* line 236, styles.scss */
+/* line 240, styles.scss */
 .desc-info {
   font-weight: 600;
   font-size: 17px;
   color: #db4437;
 }
 
-/* line 241, styles.scss */
+/* line 245, styles.scss */
 .desc-text {
   padding: 10px;
 }
 
-/* line 244, styles.scss */
+/* line 248, styles.scss */
 .desc-header {
   font-weight: 400;
   font-size: 16px;
@@ -337,22 +343,22 @@
   margin-bottom: 4px;
 }
 
-/* line 250, styles.scss */
+/* line 254, styles.scss */
 .event-details-wrapper {
   margin-top: 10px;
 }
 
-/* line 254, styles.scss */
+/* line 258, styles.scss */
 .log-pages {
   margin-top: -50px;
   height: 100vh;
 }
 
-/* line 258, styles.scss */
+/* line 262, styles.scss */
 .login-intro-block {
   margin-top: 100px;
 }
-/* line 260, styles.scss */
+/* line 264, styles.scss */
 .login-intro-block h4 {
   text-align: center;
   font-weight: 400;
@@ -360,22 +366,22 @@
   color: #ececec;
 }
 
-/* line 267, styles.scss */
+/* line 271, styles.scss */
 .signup-intro-block {
   margin-top: 30px;
 }
-/* line 269, styles.scss */
+/* line 273, styles.scss */
 .signup-intro-block p {
   text-align: center;
   color: #ececec;
 }
-/* line 273, styles.scss */
+/* line 277, styles.scss */
 .signup-intro-block a {
   color: #ececec;
   font-weight: 500;
 }
 
-/* line 278, styles.scss */
+/* line 282, styles.scss */
 .btn-submit {
   background-color: white !important;
   color: #db4437 !important;
@@ -383,22 +389,22 @@
   display: -webkit-box;
 }
 
-/* line 285, styles.scss */
+/* line 289, styles.scss */
 .form-group-custom input {
   color: #ececec;
 }
 
-/* line 292, styles.scss */
+/* line 296, styles.scss */
 .form-elements {
   padding-right: 30px;
   padding-left: 30px;
 }
 
-/* line 296, styles.scss */
+/* line 300, styles.scss */
 .logo-intro-block {
   margin-top: 10px;
 }
-/* line 298, styles.scss */
+/* line 302, styles.scss */
 .logo-intro-block img {
   height: 60px;
   text-align: center;
@@ -406,12 +412,12 @@
   display: inherit;
 }
 
-/* line 306, styles.scss */
+/* line 310, styles.scss */
 .btn-center {
   text-align: center;
 }
 
-/* line 309, styles.scss */
+/* line 313, styles.scss */
 .reg-pages {
   background-position-y: 312px;
   height: 180px;
@@ -421,7 +427,7 @@
   background-image: url("../img/cover2.jpg");
 }
 
-/* line 318, styles.scss */
+/* line 322, styles.scss */
 .registration-intro-block h4 {
   margin-top: 60px;
   font-size: 24px;
@@ -429,20 +435,20 @@
   font-weight: 300;
 }
 
-/* line 325, styles.scss */
+/* line 329, styles.scss */
 .reg-form-area {
   background: transparent;
   margin-top: 58px;
 }
 
-/* line 329, styles.scss */
+/* line 333, styles.scss */
 .form-margins {
   margin-left: 15px !important;
   margin-right: 15px !important;
   margin-top: 7px !important;
 }
 
-/* line 334, styles.scss */
+/* line 338, styles.scss */
 .btn-signup {
   margin: 0 auto;
   float: none;
@@ -451,36 +457,36 @@
   margin-bottom: 20px;
 }
 
-/* line 340, styles.scss */
+/* line 344, styles.scss */
 .advert-item-wrapper {
   background-color: white;
   padding: 5px 8px 5px 8px;
   padding-top: 0;
 }
 
-/* line 344, styles.scss */
+/* line 348, styles.scss */
 .advert-image-wrapper {
   height: 260px;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 348, styles.scss */
+/* line 352, styles.scss */
 .advert-image-wrapper img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-/* line 355, styles.scss */
+/* line 359, styles.scss */
 .ad-title-wrapper h4 {
   padding-top: 10px;
 }
-/* line 358, styles.scss */
+/* line 362, styles.scss */
 .ad-title-wrapper h4, .ad-title-wrapper p {
   padding-left: 15px;
 }
 
-/* line 362, styles.scss */
+/* line 366, styles.scss */
 .ad-list {
   margin-top: 16px;
   padding-left: 1px !important;
@@ -490,26 +496,26 @@
   margin-right: 15px;
 }
 
-/* line 367, styles.scss */
+/* line 371, styles.scss */
 .mail-list {
   margin-top: 30px;
   margin-right: 16px;
 }
-/* line 370, styles.scss */
+/* line 374, styles.scss */
 .mail-list a {
   text-decoration: none;
 }
 
-/* line 374, styles.scss */
+/* line 378, styles.scss */
 #msg-content {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* line 380, styles.scss */
+/* line 384, styles.scss */
 .aboutpage-wrapper {
-  background-image: url("../img/cover.jpg");
+  background-image: url("../img/cover2.jpg");
   background-size: cover;
   background-position: center center;
   height: 100%;
@@ -517,167 +523,167 @@
   margin-top: -3px;
 }
 
-/* line 388, styles.scss */
+/* line 392, styles.scss */
 .about-logo-intro-block {
-  margin-top: 40px;
+  margin-top: 90px;
 }
-/* line 390, styles.scss */
+/* line 394, styles.scss */
 .about-logo-intro-block img {
   height: 120px;
 }
 
-/* line 394, styles.scss */
+/* line 398, styles.scss */
 .aboutpage-endings {
   margin-top: 20px;
   text-align: center;
 }
-/* line 397, styles.scss */
+/* line 401, styles.scss */
 .aboutpage-endings h4 {
   color: white;
   font-weight: 400;
   font-size: 20px;
 }
-/* line 402, styles.scss */
+/* line 406, styles.scss */
 .aboutpage-endings h5 {
   color: white;
   font-size: 20px;
 }
 
-/* line 408, styles.scss */
+/* line 412, styles.scss */
 .innerpage-wrapper {
   margin-top: 20px;
   margin-left: 5px;
   margin-right: 5px;
   background-color: white;
 }
-/* line 413, styles.scss */
+/* line 417, styles.scss */
 .innerpage-wrapper h3 {
   color: #db4437;
 }
 
-/* line 417, styles.scss */
+/* line 421, styles.scss */
 .innerpage-contents {
   padding-top: 10px;
   padding-bottom: 50px;
 }
 
-/* line 422, styles.scss */
+/* line 426, styles.scss */
 .news-btn-wrapper {
   padding-bottom: 20px;
 }
-/* line 424, styles.scss */
+/* line 428, styles.scss */
 .news-btn-wrapper button {
   margin: 0 auto;
   width: 100%;
   display: -webkit-box;
 }
 
-/* line 431, styles.scss */
+/* line 435, styles.scss */
 .red {
   background-color: #d32f2f;
   color: white;
 }
 
-/* line 434, styles.scss */
+/* line 438, styles.scss */
 .pink {
   background-color: #c2185b;
   color: white;
 }
 
-/* line 437, styles.scss */
+/* line 441, styles.scss */
 .purple {
   background-color: #7b1fa2;
   color: white;
 }
 
-/* line 440, styles.scss */
+/* line 444, styles.scss */
 .deep-purple {
   background-color: #512da8;
   color: white;
 }
 
-/* line 443, styles.scss */
+/* line 447, styles.scss */
 .indigo {
   background-color: #303f9f;
   color: white;
 }
 
-/* line 446, styles.scss */
+/* line 450, styles.scss */
 .light-blue {
   background-color: #0288d1;
   color: white;
 }
 
-/* line 449, styles.scss */
+/* line 453, styles.scss */
 .blue {
   background-color: #1976d2;
   color: white;
 }
 
-/* line 452, styles.scss */
+/* line 456, styles.scss */
 .cyan {
   background-color: #0097a7;
   color: white;
 }
 
-/* line 455, styles.scss */
+/* line 459, styles.scss */
 .teal {
   background-color: #00796b;
   color: #212121;
 }
 
-/* line 458, styles.scss */
+/* line 462, styles.scss */
 .green {
   background-color: #388e3c;
   color: white;
 }
 
-/* line 461, styles.scss */
+/* line 465, styles.scss */
 .yellow {
   background-color: #ffa000;
   color: #212121;
 }
 
-/* line 464, styles.scss */
+/* line 468, styles.scss */
 .orange {
   background-color: #e64a19;
   color: white;
 }
 
-/* line 467, styles.scss */
+/* line 471, styles.scss */
 .brown {
   background-color: #5d4037;
   color: white;
 }
 
-/* line 470, styles.scss */
+/* line 474, styles.scss */
 .grey {
   background-color: #9e9e9e;
   color: white;
 }
 
-/* line 473, styles.scss */
+/* line 477, styles.scss */
 .black {
   background-color: #263238;
   color: white;
 }
 
-/* line 477, styles.scss */
+/* line 481, styles.scss */
 .btn-continue {
   margin-top: -150px;
 }
 
-/* line 480, styles.scss */
+/* line 484, styles.scss */
 .btn-skip {
   color: #db4437;
 }
 
-/* line 483, styles.scss */
+/* line 487, styles.scss */
 .fill {
   background-color: #db4437;
 }
 
-/* line 486, styles.scss */
+/* line 490, styles.scss */
 .carousel-control.right {
   background-image: none;
   background-image: none;
@@ -687,7 +693,7 @@
   background-repeat: repeat-x;
 }
 
-/* line 494, styles.scss */
+/* line 498, styles.scss */
 .carousel-control.left {
   background-image: none;
   background-image: none;
@@ -697,43 +703,43 @@
   background-repeat: repeat-x;
 }
 
-/* line 502, styles.scss */
+/* line 506, styles.scss */
 .splash-image-wrapper {
   text-align: center;
 }
-/* line 504, styles.scss */
+/* line 508, styles.scss */
 .splash-image-wrapper img {
   margin-top: 160px;
   height: 150px;
 }
 
-/* line 509, styles.scss */
+/* line 513, styles.scss */
 .other-splash-image-wrapper {
   text-align: center;
 }
-/* line 511, styles.scss */
+/* line 515, styles.scss */
 .other-splash-image-wrapper img {
   margin-top: 160px;
   height: 200px;
 }
 
-/* line 516, styles.scss */
+/* line 520, styles.scss */
 .carousel-caption {
   bottom: 200px !important;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* line 522, styles.scss */
+  /* line 526, styles.scss */
   .carousel-caption {
     bottom: 150px !important;
   }
 }
-/* line 526, styles.scss */
+/* line 530, styles.scss */
 .navbar {
   min-height: 56px;
 }
 
-/* line 532, styles.scss */
+/* line 536, styles.scss */
 .body-background {
   background: #EB3349;
   /* fallback for old browsers */
@@ -744,7 +750,7 @@
   padding-top: 0;
 }
 
-/* line 538, styles.scss */
+/* line 542, styles.scss */
 .active {
   background: none;
   border: 3px solid white;
@@ -753,10 +759,22 @@
   border-top: none;
 }
 
-/* line 545, styles.scss */
+/* line 549, styles.scss */
 .spin-border {
   border-bottom: none !important;
 }
-.alarm-icon{
-  /*padding-left: 10px;*/
+
+/* line 552, styles.scss */
+.splash-fix {
+  border-bottom: none !important;
+}
+
+/* line 555, styles.scss */
+.splash-background {
+  background-color: #db4437;
+}
+
+/* line 558, styles.scss */
+.about-body {
+  padding-top: 0 !important;
 }

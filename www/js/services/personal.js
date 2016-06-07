@@ -1,4 +1,5 @@
 // get advertisements posted on the php server
+var count;
 var val = JSON.parse(localStorage.getItem('cred'));
 getPersonal();
 function getPersonal(){
@@ -10,6 +11,7 @@ url:url+"Personal.php?U_ID="+val.U_ID,
 data:"data",
 cache:false,
 success:function(data){
+ var count = data.length; 
 $('#progress-bar').hide();
 output="<div class='animated bounceInUp'>";
 $.each(data,function(key,val){
@@ -24,7 +26,12 @@ $.each(data,function(key,val){
   output+="<div class='list-group-separator'> </div>";
 })
 output+="</div>";
+console.log(count);
 $('#mail-list').html(output);
+if(count == 0){
+var output2 = "<p class='animated bounceInUp' style='text-align:center'>You dont have any messages</p>";
+$('#mail-list').html(output2);
+}
 },
 error:function(XMLHttpRequest, textStatus, errorThrown){
     $("#snackbarid").attr('data-content','Network error');

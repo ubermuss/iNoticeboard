@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+     <script type="text/javascript">
+      var val = JSON.parse(localStorage.getItem('cred'));
+       if(val==null){
+            window.location.href="login.html";
+       }
+     </script>
     <script type="text/javascript" src="js/lib/js.cookie.js"></script>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
@@ -21,8 +27,8 @@
     <div class="navmenu navmenu-custom navmenu-fixed-left offcanvas">
       <div class="head">
         <a class="navmenu-brand" href="#">
-          <img src="img/muss.png" alt="..." class="img-circle avatar">
-          <p class="username" id="Uname">Mussa Kalokola</p><p class="coursename"></p></a>
+          <img src="img/avatar.png" alt="..." class="img-circle avatar">
+          <p class="username" id="Uname">Mussa Kalokola</p><span class="emailWrrapper" id="emailWrrapper">mussakalokola@gmail.com</span></a>
         </div>
      <ul class="nav navmenu-nav">
          <li><a href="index.html" class="withripple" data-ripple-color="#F44336">
@@ -80,7 +86,7 @@
 <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
 <script type="text/javascript" src="js/services/global.js"></script>
 <script type="text/javascript" src="js/services/adverts.js"></script>
-<script type="text/javascript" src="cordova.js"></script>
+<!-- <script type="text/javascript" src="cordova.js"></script -->>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
 $.material.init();

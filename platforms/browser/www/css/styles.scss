@@ -54,11 +54,12 @@ line-height: 1;
 }
 }
 .username {
-margin-top:28px;
+margin-top:18px;
 font-weight:400;
 font-size:14px;
+margin-bottom:0;
 }
-.coursename{
+.emailWrrapper{
 font-size:small;
 font-weight:300;
 margin-top:-14px;
@@ -161,6 +162,9 @@ margin-bottom : 5px;
 .author-avatar{
 height:40px;
 width:40px;
+}
+.badge{
+background:#4CAF50;
 }
 .news-list{
 margin-top:8px;
@@ -378,7 +382,7 @@ text-decoration:none;
 }
 //about page
 .aboutpage-wrapper{
-background-image:url("../img/cover.jpg");
+background-image:url("../img/cover2.jpg");
 background-size:cover;
 background-position:center center;
 height:100%;
@@ -386,7 +390,7 @@ width:100%;
 margin-top: -3px;
 }
 .about-logo-intro-block{
-margin-top:40px;
+margin-top:90px;
 img{
 height:120px;
 }
@@ -544,4 +548,13 @@ padding-top:0;
 }
 .spin-border{
 	border-bottom:none !important;
+}
+.splash-fix{
+	border-bottom:none !important;
+}
+.splash-background{
+	background-color:$primary-color;
+}
+.about-body{
+	padding-top:0 !important;
 }

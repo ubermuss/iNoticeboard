@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+   <script type="text/javascript">
+      var val = JSON.parse(localStorage.getItem('cred'));
+       if(val==null){
+            window.location.href="login.html";
+       }
+     </script>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
@@ -14,7 +20,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Custom styles for this template -->
   </head>
-  <body>
+  <body class="about-body">
     <div class="navmenu navmenu-custom navmenu-fixed-left offcanvas">
       <div class="head">
         <a class="navmenu-brand" href="#">
@@ -59,9 +65,9 @@
         </div>
         <div class="row">
           <div class="col-xs-12 aboutpage-endings">
-            <h4>Inoticeboard</h4>
+            <h4>Inoticeboard V.1.0 BETA</h4>
             <h4>A revolutionary noticeboard</h4>
-            <h4>2015&copy;Mussa Kalokola.</h4>
+            <h4>Mussa Kalokola</h4>
             <h5>+25568506011</h5>
           </div>             
         </div>
@@ -76,7 +82,7 @@
   <script type="text/javascript" src="js/lib/material.min.js"></script>
   <script type="text/javascript" src="js/lib/materialize.min.js"></script>
   <script type="text/javascript" src="js/lib/snackbar.min.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript">
   $.material.init();

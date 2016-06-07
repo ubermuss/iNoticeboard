@@ -15,6 +15,8 @@ var val = JSON.parse(localStorage.getItem('cred'));
 if(val !=""){
 var fullname=val.First_name+" "+val.Last_name;
 $("#Uname").text(fullname);
+var email = val.Email;
+$("#emailWrrapper").text(email);
 }
 function redirect_to(location){
 	window.location.href=location;

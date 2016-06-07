@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <script type="text/javascript" src="js/lib/js.cookie.js"></script>
     <meta charset="utf-8" />
      <script type="text/javascript" src="js/lib/js.cookie.js"></script>
     <meta name="format-detection" content="telephone=no" />
@@ -22,7 +21,7 @@
 
     <!-- Custom styles for this template -->
   </head>
-  <body >
+  <body class="splash-background">
     <!-- registration-page-starts here -->
      <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -31,10 +30,10 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-          
+
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
-            <div class="item active fill">
+            <div class="item active fill splash-fix">
                 <!-- Set the first background image using inline CSS below. -->
                 <div style=""></div>
                 <p class="splash-image-wrapper animated swing">
@@ -44,7 +43,7 @@
                 <h3>All the news at one place</h3>
                 </div>
             </div>
-            <div class="item fill">
+            <div class="item fill splash-fix">
                 <!-- Set the second background image using inline CSS below. -->
                 <div style=""></div>
                 <p class="other-splash-image-wrapper animated swing">
@@ -54,8 +53,8 @@
                 <h3>Events, Advertisements and lost and found items</h3>
                 </div>
             </div>
-            <div class="item fill">
-                <!-- Set the third background image using inline CSS below. -->        
+            <div class="item fill splash-fix">
+                <!-- Set the third background image using inline CSS below. -->
                 <div style=""></div>
                 <p class="other-splash-image-wrapper animated swing">
                 <img src="img/faces.png" alt="">
@@ -76,7 +75,7 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-          
+
     </header>
 
     <!-- Page Content -->
@@ -95,7 +94,7 @@
       var localData = JSON.parse(localStorage.getItem('cred'));
       console.log(localData.First_name);
     </script>
-      <script type="text/javascript" src="cordova.js"></script>
+   <!--    <script type="text/javascript" src="cordova.js"></script> -->
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
       $('.carousel').carousel({
